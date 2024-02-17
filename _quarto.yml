@@ -33,11 +33,11 @@ website:
 
   #google-analytics: "G-XXXXXXXXXX"
 
-  #announcement: 
-  #  icon: info-circle
-  #  dismissable: false
-  #  content: "**Important** - this website contains work in progress. You can find the syllabus for this course [here](https://www.cgoodman.com/files/teaching/goodman-pspa632-24spr.pdf)."
-  #  type: danger
+  announcement: 
+    icon: info-circle
+    dismissable: false
+    content: "**Important** - this website contains work in progress. You can find the syllabus for this course [here](https://www.cgoodman.com/files/teaching/goodman-pspa632-24spr.pdf)."
+    type: danger
   #  position: below-navbar
 
   navbar:
