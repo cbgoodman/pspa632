@@ -31,7 +31,7 @@ website:
   open-graph:
     locale: en_US
 
-  #google-analytics: "G-XXXXXXXXXX"
+  google-analytics: "G-32H7B8FQW4"
 
   announcement: 
     icon: info-circle
