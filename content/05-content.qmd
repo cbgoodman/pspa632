@@ -1,0 +1,11 @@
+---
+title: "Planning, economic development, & public works"
+date: 2024-02-14
+---
+
+## Readings
+
+-   Chapters 8, 12 and 14 in *Managing Local Government Services: The Challenge of Change* [@nelson2021]
+-   Brinkley, Catherine, and Carl Stahmer. “What Is in a Plan? Using Natural Language Processing to Read 461 California City General Plans.” [@brinkley2021]
+-   Morgan, Jonathan Q., Michele M. Hoyman, and Jamie R. McCall. “Everything but the Kitchen Sink? Factors Associated With Local Economic Development Strategy Use.” [@morgan2019]
+-   Kim, Jiseul, and Carol Ebdon. “Asset Maintenance Practices and Challenges in U.S. Counties.” [@kim2021]

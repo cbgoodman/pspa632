@@ -1,0 +1,11 @@
+---
+title: Local government structure and leadership
+date: 2024-01-17
+---
+
+## Readings
+
+-   Chapters 1-3 and 5 in *Managing Local Government: An Essential Guide for Municipal and County Managers* [@nelson2018]
+-   Chapter 1 and 2 in *Managing Local Government Services: The Challenge of Change* [@nelson2021]
+-   Chapter 1 in *The Effective Local Government Manager* [@lee2022]
+-   Walker, R. M., and R. Andrews. “Local Government Management and Performance: A Review of Evidence.” [@walker2015]

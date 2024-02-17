@@ -1,0 +1,11 @@
+---
+title: "Records management, public information, and citizen engagement"
+date: 2024-01-31
+---
+
+## Readings
+
+-   Chapter 8 in *Managing Local Government: An Essential Guide for Municipal and County Managers* [@nelson2018]
+-   Dolan, Drew. “The Clerk.” [@dolan2007]
+-   Piotrowski, Suzanne J., and Gregg G. Van Ryzin. “Citizen Attitudes Toward Transparency in Local Government.” [@piotrowski2007]
+-   Nabatchi, Tina, and Lisa Blomgren Amsler. “Direct Public Engagement in Local Government.” [@nabatchi2014]

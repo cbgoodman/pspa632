@@ -1,0 +1,10 @@
+---
+title: "Public safety & emergency management"
+date: 2024-02-28
+---
+
+## Readings
+
+-   Chapters 9, 10, and 11 in *Managing Local Government Services: The Challenge of Change* [@nelson2021]
+-   [ICMA White Paper: 21st Century Fire and Emergency Services](https://icma.org/documents/white-paper-21st-century-fire-and-emergency-services)
+-   Ammons, David N., and Joshua S. Edwards. “Misrepresentation of Staffing Standards for Police.” [@ammons2008]

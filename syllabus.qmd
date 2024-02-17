@@ -1,0 +1,233 @@
+---
+title: Syllabus
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(dplyr)
+library(tibble)
+library(pander)
+```
+
+:::: {.grid .course-details .course-details-smaller}
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+### Instructor
+
+- [{{< fa user >}}]{.fa-li} [{{< var instructor.name >}}]({{< var instructor.url >}})
+- [{{< fa university >}}]{.fa-li} {{< var instructor.office >}}
+- [{{< fa envelope >}}]{.fa-li} <a href='mailto:{{< var instructor.email >}}'>{{< var instructor.email >}}</a>
+- [{{< iconify ph butterfly-bold size=1.2em title='Bluesky' >}}]{.fa-li} [Bluesky]({{< var instructor.bluesky >}})
+- [{{< iconify bi mastodon size=1.1em title='Mastodon' >}}]{.fa-li} [Mastodon]({{< var instructor.mastodon >}})
+
+:::
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+### Course details
+
+- [{{< fa calendar >}}]{.fa-li} {{< var course.days >}}
+- [{{< fa calendar-alt >}}]{.fa-li} {{< var course.dates >}}
+- [{{< fa clock >}}]{.fa-li} {{< var course.time >}}
+- [{{< fa location-dot >}}]{.fa-li} {{< var course.location >}}
+:::
+
+::: {.g-col-12 .g-col-md-4 .contact-policy}
+### Contacting me
+
+- [{{< fa calendar-check >}}]{.fa-li} [Schedule an appointment]({{< var instructor.appointment_url >}})
+:::
+
+::::
+
+## Course Description
+
+> *Administration of local government services in urban and metropolitan areas. Analysis of particular problems faced by local governments in the performance of line and staff functions. --- NIU Graduate Catalog*
+
+This course is an introduction to local government operations and management. The focus is on the role of the manager in coordinating and managing the various functions of local government. Topics covered include city management, governing boards, clerk, public works, public safety, water and wastewater, planning, economic development, parks, recreation, and public health. This is a graduate seminar. Beyond the reading, students will have responsibility for facilitating class discussions.
+
+##  Textbooks
+
+This course requires two textbooks. Please keep in mind that it is almost always cheaper to purchase books published by ICMA Press directly from [ICMA](https://bookstore.icma.org) (and even cheaper if you are a member).
+
+-   Nelson, Kimberly L., and Carl W. Stenberg. 2018. *Managing Local Government: An Essential Guide for Municipal and County Managers*. Washington, D.C: CQ Press.
+
+-   Nelson, Kimberly L., and Carl W. Stenberg. 2021. *Managing Local Government Services: The Challenge of Change*. 4th ed. Washington, D.C: ICMA Press.
+
+-   Lee, Robert E., and Michael Abels, eds. 2022. *The Effective Local Government Manager*. 4th ed. Washington, D.C: ICMA Press.
+
+Additional required readings, as detailed below, will be available either online through the library or on [Blackboard](https://webcourses.niu.edu).
+
+## Assignments
+
+```{r assignments-grades, include=FALSE}
+assignments <- tribble(
+  ~Points,  ~Assignment,
+  2 * 10  , "Individual Paper 1 & 2",
+  20      , "Public meeting reflection",
+  0       , "Team Project Part 1 - Topic",
+  5       , "Team Project Part 2 - Identification memo",
+  20      , "Team Project Part 3 - Research project",
+  15      , "Team Project Part 4 - Presentation",
+  20      , "Class participation"
+) %>%
+  mutate(Percent = Points / sum(Points),
+         Percent = scales::label_percent(accuracy = 1)(Percent))
+```
+
+```{r show-assignments-table, echo=FALSE, results="asis", warning=FALSE}
+assignments_total <- tibble(Assignment = "Total",
+                            Points = sum(assignments$Points),
+                            Percent = NA)
+
+bind_rows(assignments, assignments_total) %>% 
+  select(Assignment, Points, Percent) %>% 
+  pandoc.table(justify = "lcc", missing = "—", digits = c(1, 3))
+```
+
+#### Class Preparation and Participation
+
+Class preparation and participation are essential parts of this course. I expect you to do the week's reading and (applicable) pre-work and be ready to engage in the online discussions for that week. I expect you to be a consistent and active participant in the course.
+
+#### Individual Paper #1
+
+Research the agency where you work to find answers to each item listed below. Do not copy text or graphics from a website or other online platform; use your own words for each answer. In a 300-600 word typewritten paper, respond to the following (one-half point per full response to each):
+
+-   The name of the agency and its principal address. If you work at a location other than the principal address, please indicate that location.
+
+-   The names and titles of each of the agency’s governing board officials.
+
+-   The names and titles of the agency’s chief administrative officer, and each department head who is a direct report to the chief administrative officer.
+
+-   The total number of full-time and part-time employees in the agency.
+
+-   The agency’s current total expenditure budget amount for the year, in all funds, and indicate whether fiscal-year (with FY end date) or calendar year.
+
+-   The name and title of the chief Freedom of Information Act (FOIA) officer.
+
+-   The URL of the agency’s primary website, and the name and title of the staff person who is most directly responsible for website management.
+
+-   The title of the agency’s primary Facebook, Twitter, YouTube, and Instagram social media platforms (list as many as applicable).
+
+-   From the agency’s website, name the section or page where you found the following: the next regular governing board meeting agenda, a feedback or “contact us” form, the current budget, and the most recent ACFR.
+
+-   Identify three professional organizations the agency is a member of (i.e., Illinois Municipal League American Public Works Association, Northwest Municipal Conference) and who is the designated representative to each.
+
+#### Individual Paper #2
+
+In a typewritten paper of 600-900 words, interview your immediate supervisor at the agency where you are either a full-time employee or intern. The paper must include answers and discussion on each of the following topics (one point per full response to each):
+
+-   Ask the supervisor to discuss their education, previous positions within this agency, and their prior relevant employment.
+
+-   Ask the supervisor to describe their work typical day, and interactions with their supervisor or to whom they report.
+
+-   Ask them to describe their relationships with other departments, and other public agencies (schools, park district, library, etc.).
+
+-   Ask the supervisor to conduct a mini-SWOT analysis of the agency, or the department or organization where you both work, identifying up to three issues for each SWOT (Strengths, Weaknesses, Opportunities, Threats) element, and the reason for each response.
+
+-   Ask where they see themselves, and this agency, in ten years.
+
+-   You may ask additional questions, or engage in more topics, as you wish.
+
+#### Public Meeting Reflection
+
+Attend and watch a governing board meeting for the agency where you are either a full-time employee or intern. Virtually attend or watch an additional governing board meeting for municipal governments online. Compare and contrast the roles and interactions of a) professional public managers, b) elected officials, and c) members of the general public during the meeting. Reflect upon these dynamics in the context of our readings on governing boards.
+
+## Team Project: Policy Analysis
+
+Your assigned team will be the team you will work in for the planning, research, writing, and presentation of the team project. The project is to identify and develop a persuasive position on a matter of public policy directly related to local government administration. To this point, avoid matters that deal directly with state and Federal government, or nonprofit management. Research and develop your project based on local government, typically municipal, township, county, or a single-purpose, administration. The objective is to present an affirmative argument in favor of a position relevant to local government, as though you were a work group assigned to make a presentation to the elected officials of the unit of government. The assignment is as follows:
+
+#### Part 1: Topic
+
+One team member should submit using the assignment link in Module 1 identifying your team number, the names of the group members, and up to a one paragraph description of your identified public policy topic for the team project. In the event more than one team selects the same topic, the team submitting the topic first shall be allowed to keep their topic and the other team(s) will select a different topic.
+
+#### Part 2: Identification Memo
+
+In a typewritten, maximum 300 words, paper write a team collaborative memorandum to the governing board stating the public policy topic, its relevance to current issues facing the agency, and a statement of the possible areas you as a work team intend to research and present to the board. The memo should end by identifying the members of the team and their areas of responsibility for the project.
+
+#### Part 3: Research Paper
+
+In a typewritten paper of between 3000-3600 total words (exceeding the word limit will result in deduction of points), excluding a cover page and reference list page(s), present the team’s collaborative policy research, to include:
+
+-   A statement that defines the issue, its importance, the central controversies and options for solutions to resolve the issue. This section should be 600-900 words.
+
+-   A review of relevant research that provides evidence to support the team’s arguments, including problem or issue definitions, elements of the issue, and the alternatives to be considered, both pro and con. This section will include references to literature the team will find as a part of its research, so be sure to use appropriate citations. If the team uses a personal interview as a part of the research, be sure to obtain permission from the interviewee prior to the interview, disclose the purpose of the interview, record the answers, and cite the interview as appropriate. This section should be from 1500 to 2100 words.
+
+-   The concluding section of the paper will serve as the team’s preferred option for resolving or addressing the issue. Restate the policy issue, its relevance and importance to the agency, and the reasons for your recommendation based on the research within the paper. This section should be from 600 to 900 words.
+
+#### Part 4: Presentation
+
+Each team presents to the class, who will serve as the agency board, in a 15-minute presentation (exceeding the time limit will result in deduction of points) to summarize the public policy of your research topic, the case analysis and your recommendations. The presentation will include between 5-8 Power Point slides (excluding introduction and citation slides) which summarize the points offered in the presentation.
+
+## Learning Outcomes
+
+In order to become effective public leaders, students must develop a solid foundation in technical, analytical, ethical, diversity, accountability, and leadership skills. In addition, students receive greater depth in a specialty area training of their choice: local government management, public management and leadership, fiscal administration, or nonprofit management.
+
+This course (PSPA 632) is designed to address the following program competencies:
+
+| **Competency**                                                                                                                                                      | **Team Research Project Paper** | **Team Research Project Presentation** | **Individual Papers** | **Participation** |
+|---------------|:-------------:|:-------------:|:-------------:|:-------------:|
+| Effectively work with internal and external stakeholders                                                                                                            |                X                |                   X                    |           X           |                   |
+| Motivate peers and employees to enhance organizational capacity                                                                                                     |                                 |                                        |                       |         X         |
+| Apply decision-making theories to frame and solve public service problems                                                                                           |                X                |                   X                    |           X           |                   |
+| Effectively participate in the public policy process in a role appropriate to a professional public manager                                                         |                X                |                   X                    |           X           |                   |
+| Conduct environmental scans and identify the windows of opportunity to influence decisions                                                                          |                X                |                   X                    |           X           |         X         |
+| Evaluate public service issues in terms of effectiveness, efficiency, equity, and economy                                                                           |                X                |                   X                    |                       |         X         |
+| Incorporate professional codes of ethics in public service decision-making to enhance integrity of public services                                                  |                X                |                   X                    |                       |         X         |
+| Communicate effectively both orally (public speaking) and in writing (analytical and persuasive) for a public service organization and in the public policy process |                X                |                   X                    |           X           |         X         |
+| Understand and listen critically to diverse perspectives to address public service issues                                                                           |                X                |                   X                    |           X           |         X         |
+| Identify strategies for improving democratic accountability in governance, including improved transparency and civic participation                                  |                X                |                   X                    |           X           |         X         |
+| Develop or adapt policies, programs, goods, or services to accommodate changing social demographics for the population they serve                                   |                X                |                   X                    |                       |         X         |
+
+: {tbl-colwidths="\[40,11.5,11.5,11.5,11.5\]"}
+
+## Course Policies
+
+### Communications
+
+Course announcements will be made via email so it is imperative that you check your e-mail daily. "I didn't get the email" is never a valid excuse. The most effect method of communicating with me is using email; however, you are also encouraged to [schedule a meeting](https://outlook.office365.com/owa/calendar/PSPA611@mail.niu.edu/bookings/) at my office or a phone call.
+
+### Late Assignments
+
+All course assignments are due at 11:59pm unless otherwise noted. Course policy is that late work will not be accepted. That said, you should always turn in your work, even if late. Generally, you will receive at least partial credit for late work, depending on the assignment. This is better than receiving a '0' on the assignment. All assignments are due at the beginning of class on the assigned due date, unless otherwise specified. For students who contact the instructor before the assignment deadline regarding extenuating circumstances constituting an emergency, the instructor will consider those circumstances and evaluate whether an accommodation can and should be made based on equity, fairness, and compassion. However, an accommodation should not be considered a matter of right in such circumstances.
+
+### Lauren's Promise
+
+I will listen and believe you if someone is threatening you. Lauren McCluskey, a 21-year-old honors student athlete, [was murdered on October 22, 2018 by a man she briefly dated on the University of Utah campus](https://www.sltrib.com/opinion/commentary/2019/02/10/commentary-failing-lauren/). We must all take action to ensure that this never happens again.
+
+If you are in immediate danger, call 911.
+
+If you are experiencing sexual assault, domestic violence, or stalking, please report it to me and I will connect you to resources or call [NIU's Counseling and Consultation Services](https://www.niu.edu/counseling/) (815-753-1206).
+
+Any form of sexual harassment or violence will not be excused or tolerated at Northern. NIU has instituted procedures to respond to violations of these laws and standards, programs aimed at the prevention of such conduct, and intervention on behalf of the victims. NIU Police officers will treat victims of sexual assault, domestic violence, and stalking with respect and dignity. Advocates on campus and in the community can help with victims' physical and emotional health, reporting options, and academic concerns.
+
+### Accessibility
+
+If you need an accommodation for this class, please contact the Disability Resource Center as soon as possible. The DRC coordinates accommodations for students with disabilities. It is located in the Campus Life Building, Suite 180, and can be reached at 815-753-1303 or [drc\@niu.edu](mailto:drc@niu.edu).
+
+Also, please contact me privately as soon as possible so we can discuss your accommodations. Please note that you will not be required to disclose your disability, only your accommodations. The sooner you let me know your needs, the sooner I can assist you in achieving your learning goals in this course.
+
+### Name and Pronoun Statement
+
+Class rosters and University data systems are provided to faculty with the student's legal name and legal gender marker. As an NIU student, you are able to change how your preferred/proper name shows up on class rosters. This option is helpful for various student populations, including but not limited to: students who abbreviate their first name; students who use their middle name; international students; and transgender students. As a faculty member, I am committed to using your proper name and pronouns. We will take time during our first class together to do introductions, at which point you can share with all members of our learning community what name and pronouns you use, as you are comfortable. Additionally, if these change at any point during the semester, please let me know and we can develop a plan to share this information with others in a way that is safe for you.
+
+Should you want to update your preferred/proper name, you can do so by looking at the following guidelines and frequently asked questions:
+
+-   <https://www.niu.edu/regrec/preferred_proper_name/index.shtml>
+-   <https://www.niu.edu/regrec/preferred_proper_name/preferrednamefaq.shtml>
+
+### Academic Integrity
+
+The following statement is from the NIU 2017-18 Graduate Catalog:
+
+"Good academic work must be based on honesty. The attempt of any student to present as his or her own work that which he or she has not produced is regarded by the faculty and administration as a serious offense. Students are considered to have cheated, for example, if they copy the work of another or use unauthorized notes or other aids during an examination or turn in as their own a paper or an assignment written, in whole or in part, by someone else. Students are guilty of plagiarism, intentional or not, if they copy material from books, magazines, or other sources without identifying and acknowledging those sources or if they paraphrase ideas from such sources without acknowledging them. Students guilty of, or assisting others in, either cheating or plagiarism on an assignment, quiz, or examination may receive a grade of F for the course involved and may be suspended or dismissed from the university.[^1]
+
+[^1]: <https://catalog.niu.edu/content.php?catoid=44&navoid=2110&hl=%22plagiarism%22&returnto=search#acad_inte>
+
+The university has adopted additional policies and procedures for dealing with research misconduct among its students, faculty, and staff. The guidelines, entitled Research Integrity at Northern Illinois University, are available in department offices, in the office of the dean of the Graduate School, and online at [www.niu.edu/provost/policies/appm/I2.shtml](www.niu.edu/provost/policies/appm/I2.shtml), and pertain to the intentional commission of any of the following acts: falsification of data, improper assignment of authorship, claiming another person's work as one's own, unprofessional manipulation of experiments or of research procedures, misappropriation of research funds.
+
+If a graduate student fails to maintain the standards of academic or professional integrity expected in his or her discipline or program, the student's admission to the program may be terminated on recommendation of the student's major department. A statement on students' rights to the products of research is available in department offices, in the office of the dean of the Graduate School, and online at [www.niu.edu/provost/policies/appm/I11.shtml](www.niu.edu/provost/policies/appm/I11.shtml)."
+
+#### Ethics:
+
+In case it is not yet crystal clear, there is zero tolerance for plagiarism in this course, this program and this university. Anyone who violates the ethical imperative to cite the work of others that is used in writing course papers is subject to an F for the course and possible dismissal from the university. If in doubt, cite the source, whether a quotation or a paraphrasing of someone else's work. I am happy to provide advice on how to cite works in specific situations. Use the Turabian style manual for all paper citations.
+
+The English Department's statement on Plagiarism is direct and to the point: [www.engl.niu.edu/composition/guidelines/plag.shtml](www.engl.niu.edu/composition/guidelines/plag.shtml). I recommend you take the online tutorial available from the NIU website to be sure you understand the rules and principles [writingtutorial.niu.edu/writingtutorial/style/plagiarism01.html](writingtutorial.niu.edu/writingtutorial/style/plagiarism01.html).

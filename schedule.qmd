@@ -1,0 +1,30 @@
+---
+title: Schedule
+page-layout: full
+tbl-colwidths: [10,40,7.5,7.5]
+---
+
+This page contains an outline of the topics, content, and assignments for the semester.
+Note that this schedule will be updated as the semester progresses, with all changes documented here.
+
+::: column-page-inset
+| **Date** | **Topic** | **Content** | **Assignment** |
+|--------|--------|:------:|:------:|
+| January 17  | **Local government structure and leadership** | [{{< fa book-open-reader >}}](/content/01-content.qmd) | |
+| January 23  | Individual paper 1 due (submit by 11:59 PM) | | [{{< fa pen-ruler >}}](assignment/01-individual.qmd) |
+| January 23  | Team project topic due (submit by 11:59 PM) | | [{{< fa pen-ruler >}}](assignment/team-topic.qmd) |
+| January 24  | **Council/board and staff relations and the roles of mayors and managers** | [{{< fa book-open-reader >}}](/content/02-content.qmd) | |
+| January 31  | **Records management, public information, and citizen engagement** | [{{< fa book-open-reader >}}](/content/03-content.qmd) | |
+| February 6  | Individual paper 2 due (submit by 11:59 PM) | | [{{< fa pen-ruler >}}](assignment/02-individual.qmd) |
+| February 6  | Team project memo due (submit by 11:59 PM) | | [{{< fa pen-ruler >}}](assignment/team-memo.qmd) |
+| February 7  | **Budgeting & service delivery** | [{{< fa book-open-reader >}}](/content/04-content.qmd) | |
+| February 13 | Public meeting reflection due (submit by 11:59 PM) | | [{{< fa pen-ruler >}}](assignment/reflection.qmd) |
+| February 14 | **Planning, economic development, & public works** | [{{< fa book-open-reader >}}](/content/05-content.qmd) | |
+| February 21 | **Parks and recreation & public health** | [{{< fa book-open-reader >}}](/content/06-content.qmd) | |
+| February 28 | **Public safety & emergency management** | [{{< fa book-open-reader >}}](/content/07-content.qmd) | |
+| March 5     | Team project paper due (submit by 11:59 PM) | | [{{< fa pen-ruler >}}](assignment/team-paper.qmd#presentation) |
+| March 6     | **The future of local government management** | [{{< fa book-open-reader >}}](/content/08-content.qmd) | |
+| December 15 | Team project presentation due (submit by 11:59 PM) | | [{{< fa pen-ruler >}}](assignment/team-presentation.qmd) |
+:::
+
+

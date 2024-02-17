@@ -1,0 +1,10 @@
+---
+title: "The future of local government management"
+date: 2024-03-06
+---
+
+## Readings
+
+-   Chapter 11 in *Managing Local Government: An Essential Guide for Municipal and County Managers* [@nelson2018]
+-   Chapter 16 in *Managing Local Government Services: The Challenge of Change* [@nelson2021]
+-   Chapter 6 in *The Effective Local Government Manager* [@lee2022]

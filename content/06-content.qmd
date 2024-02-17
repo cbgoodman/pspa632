@@ -1,0 +1,10 @@
+---
+title: "Parks and recreation & public health"
+date: 2024-02-21
+---
+
+## Readings
+
+-   Chapters 13 and 15 in *Managing Local Government Services: The Challenge of Change* [@nelson2021]
+-   Cheng, Yuan (Daniel). “Exploring the Role of Nonprofits in Public Service Provision: Moving from Coproduction to Cogovernance.” [@cheng2019]
+-   Benavides, Abraham David, and Julius A. Nukpezah. “How Local Governments Are Caring for the Homeless During the COVID-19 Pandemic.” [@benavides2020]
